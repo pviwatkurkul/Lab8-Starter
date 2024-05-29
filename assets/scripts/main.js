@@ -7,7 +7,7 @@ const RECIPE_URLS = [
     'https://adarsh249.github.io/Lab8-Starter/recipes/3_moms-cornbread-stuffing.json',
     'https://adarsh249.github.io/Lab8-Starter/recipes/4_50-indulgent-thanksgiving-side-dishes-for-any-holiday-gathering.json',
     'https://adarsh249.github.io/Lab8-Starter/recipes/5_healthy-thanksgiving-recipe-crockpot-turkey-breast.json',
-    'https://adarsh249.github.io/Lab8-Starter/recipes/6_one-pot-thanksgiving-dinner.json'
+    'https://adarsh249.github.io/Lab8-Starter/recipes/6_one-pot-thanksgiving-dinner.json',
 ];
 
 // Run the init() function when the page has loaded
