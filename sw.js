@@ -9,7 +9,8 @@ self.addEventListener('install', function (event) {
     caches.open(CACHE_NAME).then(function (cache) {
       // B6. TODO - Add all of the URLs from RECIPE_URLs here so that they are
       //            added to the cache when the ServiceWorker is installed
-      return cache.addAll([  'https://adarsh249.github.io/Lab8-Starter/recipes/1_50-thanksgiving-side-dishes.json',
+      return cache.addAll([  
+      'https://adarsh249.github.io/Lab8-Starter/recipes/1_50-thanksgiving-side-dishes.json',
       'https://adarsh249.github.io/Lab8-Starter/recipes/2_roasting-turkey-breast-with-stuffing.json',
       'https://adarsh249.github.io/Lab8-Starter/recipes/3_moms-cornbread-stuffing.json',
       'https://adarsh249.github.io/Lab8-Starter/recipes/4_50-indulgent-thanksgiving-side-dishes-for-any-holiday-gathering.json',
@@ -43,8 +44,8 @@ self.addEventListener('fetch', function (event) {
   // B8. TODO - If the request is in the cache, return with the cached version.
   //            Otherwise fetch the resource, add it to the cache, and return
   //            network response.
-    return cache.match(event.request).then((cachedResponse) => {
-      return cachedResponse || fetch(event.request).then((fetchedResponse) =>{
+    return cache.match(event.request).then((response) => {
+      return response || fetch(event.request).then((fetchedResponse) =>{
         cache.put(event.request, fetchedResponse.clone());
 
         return fetchedResponse;

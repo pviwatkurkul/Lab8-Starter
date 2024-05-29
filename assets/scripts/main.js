@@ -54,7 +54,7 @@ function initializeServiceWorker() {
     navigator.serviceWorker.register('./sw.js').then((registration) =>{
   // B4. TODO - Once the service worker has been successfully registered, console
   //            log that it was successful.
-      console.log('Registration Successful!', registration.scope);
+      console.log('Registration Successful!');
     })
     .catch((error) => {
   // B5. TODO - In the event that the service worker registration fails, console
